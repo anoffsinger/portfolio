@@ -1,0 +1,36 @@
+// Panel layout
+
+#landing, #intro, #work, {
+    height: $panelHeight;
+}
+
+#landing {
+    background-color: $silver;
+    padding-top: 14.375em;
+
+    > h1 {
+        @extend %visually-hidden;
+    }
+}
+
+#intro {
+    background-color: $darkBlue;
+    padding-top: 8.4375em;
+}
+
+#work {
+    padding-top: $medium;
+    background-color: $silver;
+
+    @media (max-width: 50em) {
+        height: auto;
+    }
+}
+
+#contact {
+    height: auto;
+}
+
+#all-work {
+    height: auto;
+}

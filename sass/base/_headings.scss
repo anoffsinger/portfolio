@@ -1,0 +1,14 @@
+// Type treatments
+
+h2 {
+    font-family: $headerFont;
+    font-size: $headerFontSize;
+    text-transform: uppercase;
+    color: $salmon;
+    letter-spacing: .25em;
+}
+
+h3 {
+    font-family: $bodyFont;
+    font-size: $headerAltFontSize;
+}

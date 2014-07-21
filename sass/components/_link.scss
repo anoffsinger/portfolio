@@ -1,0 +1,47 @@
+// Links to external sources
+
+.link {
+    font-family: $bodyFont;
+    font-size: $footerFontSize;
+    color: $silver;
+    border-bottom: 1px solid $silver;
+    display: block;
+}
+
+.link:hover {
+    color: $lightBlue;
+    border-color: $lightBlue;
+}
+
+.link-phone,
+.link-email,
+.link-twitter,
+.link-instagram,
+.link-linkedin {
+    margin: 0 auto $small auto;
+}
+
+.link-phone {
+    width: 11.3em;
+}
+
+.link-email {
+    width: 5.0625em;
+}
+
+.link-twitter {
+    width: 6.4375em;
+}
+
+.link-linkedin {
+    width: 7.7em;
+}
+
+.link-instagram {
+    width: 8.9375em;
+}
+
+.link-github {
+    width: 6.375em;
+    margin: 0 auto;
+}

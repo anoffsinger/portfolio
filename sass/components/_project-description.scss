@@ -1,0 +1,107 @@
+// Project description box on each project page
+
+.project-description {
+    margin: 5.875em auto $large auto;
+    width: $calloutWidth;
+    border: 1px solid $darkBlue;
+    position: relative;
+    padding-top: $medium;
+    text-align: center;
+
+    @media (max-width: 50em) {
+        margin-top: 8em;
+    }
+
+    > p {
+        margin: 0 $medium 1.875em $medium;
+        line-height: 1.9375em;
+
+        @media (max-width: 39.375em) {
+            font-size: .8em;
+        }
+    }
+
+    > p:last-of-type {
+        margin-bottom: $medium;
+    }
+
+    @media (max-width: 39.375em) {
+        width: 17.875em;
+    }
+
+    
+}
+
+.project-title {
+    background-color: $silver;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    top: -2.5em;
+    width: 16em;
+    height: 3em;
+
+    > h1 {
+        font-family: $headerFont;
+        font-size: $headerFontSize;
+        text-transform: uppercase;
+        color: $darkBlue;
+        letter-spacing: .25em;
+        margin-top: 1.875em;
+    }
+
+    > p {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: $subtextFont;
+        font-size: $subtextSize;
+        color: $darkBlue;
+        letter-spacing: .25em;
+    }
+}
+
+.project-description-live-link {
+    font-family: $bodyFont;
+    text-decoration: none;
+    background-color: $salmon;
+    color: $silver;
+    display: block;
+    width: 4.857142857em;
+    height: 4.857142857em;
+    border-radius: 50%;
+    font-size: 14px;
+    position: absolute;
+    top: -2.428571429em;
+    right: -2.428571429em;
+    @include transition(all, .1s);
+
+    @media (max-width: 39.375em) {
+        bottom: -2.125em;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        top: auto;
+    }
+
+    > span {
+        text-align: center;
+        display: block;
+        width: 2.857142857em;
+        position: absolute;
+        top: 1.285714286em;
+        left: 1em;
+    }
+
+    &:hover {
+        @include transform(rotate(45deg));
+        background-color: $darkBlue;
+
+    }
+}

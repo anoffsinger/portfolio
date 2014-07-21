@@ -1,0 +1,43 @@
+// Images that appear across all project pages
+
+.project-image-large {
+    width: 76.7361111%;
+    display: block;
+    margin: 0 auto $small auto;
+
+    &:last-of-type {
+        margin-bottom: $small;
+    }
+
+    @media (max-width: 50em) {
+        width: 100%;
+    }
+}
+
+.project-image-small-container {
+    width: 76.8428373%;
+    margin: 0 auto;
+    margin-bottom: $small;
+
+    @media (max-width: 50em) {
+        width: 100%;
+    }
+}
+
+.project-image-small-left {
+    width: 49%;
+    margin-right: 1.3%;
+
+    @media (max-width: 50em) {
+        width: 100%;
+        margin-bottom: $small;
+    }
+}
+
+.project-image-small-right {
+    width: 49%;
+
+    @media (max-width: 50em) {
+        width: 100%;
+    }
+}

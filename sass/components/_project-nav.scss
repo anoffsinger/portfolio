@@ -1,0 +1,135 @@
+// Navigation for portoflio projects on all project pages
+
+.project-nav {
+    position: fixed;
+    top: 50%;
+    margin-top: -8.125em;
+    left: $small;
+    z-index: 2;
+
+    @media (max-width: 50em) {
+        left: 50%;
+        margin-left: -7.125em;
+        top: auto;
+        bottom: 0;
+    }
+}
+
+.project-nav-next, .project-nav-back, .project-nav-all, .project-nav-home, .project-nav-download {
+    height: $medium;
+    width: $medium;
+    display: block;
+
+    @media (max-width: 50em) {
+        float: left;
+        background-color: $darkBlue;
+    }
+
+    span {
+        display: block;
+        width: 2em;
+    }
+}
+
+
+    .project-nav-next, .project-nav-back, .project-nav-all, .project-nav-home {
+
+        &:hover {
+            @include transition(background-color, .3s);
+            background-color: $darkBlue;
+
+            span {
+                color: $silver;
+
+                @media (max-width: 50em) {
+                    color: $darkBlue;
+                }
+            }
+
+            @media (max-width: 50em) {
+                background-color: $white;
+            }
+        }
+    }
+
+.project-nav-download {
+    @media (max-width: 50em) {
+        display: none;
+
+    }
+
+    &:hover {
+        @include transition(background-color, .3s);
+        background-color: $darkBlue;
+
+        span {
+            color: $white;
+
+            @media (max-width: 50em) {
+                color: $darkBlue;
+            }
+        }
+
+
+    }
+}
+
+.project-nav-home {
+    padding-left: .875em;
+    padding-top: .875em;
+}
+
+.project-nav-next {
+    padding-left: 1.125em;
+    padding-top: 1.125em;
+}
+
+.project-nav-back {
+    padding-left: .9375em;
+    padding-top: 1.125em;
+}
+
+.project-nav-download {
+    padding-left: 16.5px;
+    padding-top: 16px;
+    position: relative;
+}
+
+.project-nav-all {
+    padding-left: 1.0625em;
+    padding-top: 1.125em;
+}
+
+.project-nav-download-bubble {
+    position: absolute;
+    display: block;
+    width: 200px;
+    height: 38px;
+    background-color: $salmon;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    border-radius: 80px;
+    left: 80px;
+    top: 11px;
+    padding: 13px 0 0 18px;
+
+    > span {
+        font: normal normal 12px $bodyFont;
+        color: $white;
+        width: 100%;
+    }
+
+}
+
+.project-nav-download-bubble:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 6px 9px 6px 0;
+    border-color: transparent $salmon;
+    display: block;
+    width: 0;
+    z-index: 1;
+    left: -7px;
+    top: 13px;
+}

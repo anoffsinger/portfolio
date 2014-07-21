@@ -1,0 +1,62 @@
+// Landing logo
+
+.logo {
+    height: 16.875em;
+    width: 16.875em;
+    margin: 0 auto;
+    display: block;
+}
+
+.front {
+    background: url(../images/logo.svg);
+    background-size: cover;
+    height: 16.875em;
+    width: 16.875em;
+}
+
+.back {
+    background: url(../images/logo-back.svg);
+    background-size: cover;
+    height: 16.875em;
+    width: 16.875em;
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+	@include perspective(1000px);
+    display: block;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.flip-container, .front, .back {
+	width: 16.875em;
+	height: 16.875em;
+}
+
+/* flip speed goes here */
+.flipper {
+	@include transition-time(1s);
+	@include transform-style(preserve-3d);
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	@include backface-visibility(hidden);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 1;
+}
+
+/* back, initially hidden pane */
+.back {
+	@include transform(rotateY(180deg));
+    z-index: 0;
+}

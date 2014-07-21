@@ -1,0 +1,33 @@
+.text-logo {
+    @include transform(rotate(90deg));
+    position: fixed;
+    right: -4.166666667em;
+    top: 50%;
+    font-family: $headerFont;
+    font-size: .75em;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+
+    @media (max-width: 50em) {
+        position: fixed;
+        @include transform(rotate(0deg));
+        margin-left: -8.833333333em;
+        background-color: $white;
+        right: auto;
+        top: 0;
+        margin: 0 auto;
+        text-align: center;
+        height: 5em;
+        padding: 1.916666667em;
+        z-index: 2;
+        width: 100%;
+    }
+}
+
+.text-logo-name {
+    color: $darkBlue;
+}
+
+.text-logo-trade {
+    color: $salmon;
+}

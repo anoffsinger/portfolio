@@ -1,0 +1,28 @@
+.icon-next, .icon-menu, .icon-last, .icon-home, .icon-download {
+    color: $darkBlue;
+    font-size: 1.3em;
+
+	@media (max-width: 800px) {
+		color: $silver;
+	}
+}
+
+.icon-home {
+	font-size: 1.7em;
+}
+
+.icon-home:before {
+	content: "\e601";
+}
+.icon-last:before {
+	content: "\e602";
+}
+.icon-menu:before {
+	content: "\e603";
+}
+.icon-next:before {
+	content: "\e604";
+}
+.icon-download:before {
+	content: "\e600";
+}

@@ -1,0 +1,21 @@
+.cue-demo {
+
+     margin: 0 auto $small auto;
+     position: relative;
+}
+
+.cue-demo-video {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50%;
+    margin-top: -10.546875em;
+    width: 13.3520731%;
+    -webkit-filter: brightness(105%) contrast(100%) saturate(97%) hue-rotate(8deg);
+
+    @media (max-width: 800px) {
+        width: 17%;
+    }
+}
