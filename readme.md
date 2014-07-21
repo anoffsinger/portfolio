@@ -1,4 +1,4 @@
-# Adams personal portfolio 
+# My personal portfolio
 
 ## Initialization
 	npm install
