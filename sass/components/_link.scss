@@ -11,6 +11,11 @@
 .link:hover {
     color: $lightBlue;
     border-color: $lightBlue;
+
+    @media (max-width: 50em) {
+        color: $silver;
+        border-color: $silver;
+    }
 }
 
 .link-phone,

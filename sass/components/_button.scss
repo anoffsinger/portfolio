@@ -20,7 +20,7 @@
         color: $lightBlue;
     }
 
-    @media (max-width: 800px) {
+    @media (max-width: 50em) {
         &:active {
             background-color: $white;
             color: $lightBlue;
@@ -36,7 +36,7 @@
 .button-see-all {
     margin: 0 auto;
 
-    @media (max-width: 800px) {
+    @media (max-width: 50em) {
         margin-bottom: $large;
     }
 }
@@ -45,7 +45,7 @@
 
     margin: 0 auto $large auto;
 
-    @media (max-width: 800px) {
+    @media (max-width: 50em) {
         margin-bottom: $large;
     }
 }

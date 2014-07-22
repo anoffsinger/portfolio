@@ -42,12 +42,8 @@
                 color: $silver;
 
                 @media (max-width: 50em) {
-                    color: $darkBlue;
+                    color: $silver;
                 }
-            }
-
-            @media (max-width: 50em) {
-                background-color: $white;
             }
         }
     }

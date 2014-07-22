@@ -129,7 +129,7 @@
 .project-list-item-skoop:hover .project-list-item-description {
     opacity: 1;
 
-    @media (max-width: 21.25em) {
+    @media (max-width: 50em) {
         opacity: 0;
     }
 }
@@ -142,22 +142,6 @@
     width: 100%;
     height: 100%;
     transition: opacity .3s ease;
-
-    // p:nth-of-type(1) {
-    //
-    //     @media (max-width: 340px) {
-    //         display: none;
-    //     }
-    // }
-
-    // @media (max-width: 340px) {
-    //     opacity: 1;
-    //     position: absolute;
-    //     display: block;
-    //     height: 100px;
-    //     bottom: -99px;
-    //     background-color: $lightBlue;
-    // }
 }
 
 .project-list-item-description:before {

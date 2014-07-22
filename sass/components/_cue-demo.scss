@@ -2,6 +2,10 @@
 
      margin: 0 auto $small auto;
      position: relative;
+
+     @media (max-width: 21.25em) {
+         display: none;
+     }
 }
 
 .cue-demo-video {
@@ -15,7 +19,7 @@
     width: 13.3520731%;
     -webkit-filter: brightness(105%) contrast(100%) saturate(97%) hue-rotate(8deg);
 
-    @media (max-width: 800px) {
+    @media (max-width: 50em) {
         width: 17%;
     }
 }

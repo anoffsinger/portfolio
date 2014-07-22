@@ -29,7 +29,10 @@
         width: 17.875em;
     }
 
-    
+    a {
+        color: $salmon;
+        text-decoration: underline;
+    }
 }
 
 .project-title {
@@ -102,6 +105,9 @@
     &:hover {
         @include transform(rotate(45deg));
         background-color: $darkBlue;
-
     }
+}
+
+a.project-description-live-link {
+    color: $silver;
 }

@@ -41,17 +41,16 @@
     border-radius: 50%;
     font-size: 14px;
     position: absolute;
-    top: -2.428571429em;
-    right: -2.428571429em;
+    bottom: -2.4em;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
     @include transition(all, .1s);
 
-    @media (max-width: 39.375em) {
-        bottom: -2.125em;
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        top: auto;
+    @media (max-width: 50em) {
+        display: none;
     }
 
     > span {
