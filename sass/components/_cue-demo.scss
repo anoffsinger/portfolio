@@ -1,5 +1,4 @@
 .cue-demo {
-
      margin: 0 auto $small auto;
      position: relative;
 
@@ -18,6 +17,7 @@
     margin-top: -10.546875em;
     width: 13.3520731%;
     -webkit-filter: brightness(105%) contrast(100%) saturate(97%) hue-rotate(8deg);
+    filter: brightness(105%) contrast(100%) saturate(97%) hue-rotate(8deg);
 
     @media (max-width: 50em) {
         width: 17%;

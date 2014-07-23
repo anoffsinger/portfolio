@@ -11,7 +11,7 @@
     }
 
     @media (max-width: 65.625em) {
-        max-width: 782px;
+        max-width: 48.875em;
     }
 
     @media (max-width: 50em) {
@@ -20,25 +20,19 @@
     }
 }
 
-
-
 .project-list-item {
     position: relative;
     width: 20.8125em;
     height: 20.8125em;
     float: left;
 
-
-
     @media (max-width: 65.625em) {
         width: 15.625em;
         height: 15.625em;
 
         > .project-list-item-description {
-
             font-size: .85em;
         }
-
     }
 
     @media (max-width: 50em) {
@@ -49,19 +43,12 @@
         font-size: 1em;
 
         > .project-list-item-description {
-
             font-size: 1em;
         }
     }
 
-    // @media (max-width: 21.25em) {
-    //     margin-bottom: $small !important;
-    //
-    // }
-
     a {
         color: $silver;
-        // padding-top: 3.9em;
         text-align: center;
         padding-left: 1.5em;
         padding-right: 1.5em;
@@ -72,7 +59,6 @@
     }
 
     p {
-        // line-height: .110742188em;
         line-height: 1.5em;
     }
 
@@ -91,7 +77,6 @@
     background-size: contain;
 
     @media (max-width: 50em) {
-        // margin-bottom: $small !important;
         margin-bottom: $small;
     }
 }
@@ -100,8 +85,7 @@
     background: url(../images/crafty-thumbnail.png);
     background-size: contain;
 
-    @media (max-width: 800px) {
-        // margin-bottom: $small !important;
+    @media (max-width: 50em) {
         margin-bottom: $small;
     }
 }
@@ -118,6 +102,11 @@
 
 .project-list-item-skoop {
     background: url(../images/skoop-thumbnail.png);
+    background-size: contain;
+}
+
+.project-list-item-cue-web {
+    background: url(../images/cue-web-thumb.png);
     background-size: contain;
 }
 
@@ -149,7 +138,7 @@
     display: inline-block;
     height: 100%;
     vertical-align: middle;
-    margin-right: -0.25em; /* Adjusts for spacing */
+    margin-right: -0.25em;
 }
 
 .project-list-item-description-text {

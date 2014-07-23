@@ -108,6 +108,17 @@
     }
 }
 
+.project-description-motion-link {
+    > span {
+        text-align: center;
+        display: block;
+        width: 2.857142857em;
+        position: absolute;
+        top: 1.85em;
+        left: .9em;
+    }
+}
+
 a.project-description-live-link {
     color: $silver;
 }

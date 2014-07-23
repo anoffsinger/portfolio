@@ -28,17 +28,11 @@
     }
 
     @media (max-width: 65.625em) {
-        max-width: 782px;
+        max-width: 48.875em;
     }
 
     @media (max-width: 50em) {
         width: 100%;
         height: auto;
     }
-}
-
-.project-list-item-cue-web {
-    background: url(../images/cue-web-thumb.png);
-    background-size: contain;
-    // margin-top: $small !important;
 }

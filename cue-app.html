@@ -15,6 +15,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="css/style.css">
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-53057933-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -59,19 +70,32 @@
 
         <div>
             <div class="cue-demo">
-                <img class="project-image-large cue-demo" src="images/cue-demo-bg.png" alt="">
+                <img class="project-image-demo cue-demo" src="images/cue-demo-bg.png" alt="Cue demo video">
                 <video class="cue-demo-video"src="images/cue-demo-v1.mp4" height="337.5px" autoplay loop poster="posterimage.jpg">
                 </video>
             </div>
 
-            <img class="project-image-large" src="images/cue-mobile-comps.png" alt="">
-
-            <div class="project-image-small-container">
-                <img class="project-image-small-left" src="images/cue-colors.png" alt="">
-                <img class="project-image-small-right" src="images/cue-logo-treatment.png" alt="">
+            <div class="project-image project-image-cue-comps" role="img" aria-label="Visual design comps for Cue.">
+                <span class="project-image-cue-comps-inner">
+                </span>
             </div>
 
-            <img class="project-image-large" src="images/cue-logo-guide.png" alt="">
+            <div class="project-image-small-container">
+                <div class="project-image project-image-cue-colors" role="img" aria-label="Color palette for Cue.">
+                    <span class="project-image-cue-colors-inner">
+                    </span>
+                </div>
+
+                <div class="project-image project-image-cue-logo" role="img" aria-label="Logo for Cue.">
+                    <span class="project-image-cue-logo-inner">
+                    </span>
+                </div>
+            </div>
+
+            <div class="project-image project-image-cue-logo-guide" role="img" aria-label="Logo guidelines for Cue.">
+                <span class="project-image-cue-logo-guide-inner">
+                </span>
+            </div>
         </div>
 
         <footer id="contact">
@@ -90,7 +114,6 @@
         </footer>
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
         <script language="javascript" type="text/javascript" src="js/script.js"> </script>
 
     </body>

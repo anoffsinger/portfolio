@@ -31,7 +31,6 @@
     }
 }
 
-
     .project-nav-next, .project-nav-back, .project-nav-all, .project-nav-home {
 
         &:hover {
@@ -51,7 +50,6 @@
 .project-nav-download {
     @media (max-width: 50em) {
         display: none;
-
     }
 
     &:hover {
@@ -65,8 +63,6 @@
                 color: $darkBlue;
             }
         }
-
-
     }
 }
 
@@ -102,19 +98,16 @@
     width: 200px;
     height: 38px;
     background-color: $salmon;
-    -webkit-border-radius: 80px;
-    -moz-border-radius: 80px;
-    border-radius: 80px;
-    left: 80px;
-    top: 11px;
-    padding: 13px 0 0 18px;
+    border-radius: 5em;
+    left: 5em;
+    top: .6875em;
+    padding: .8125em 0 0 1.125em;
 
     > span {
         font: normal normal 12px $bodyFont;
         color: $white;
         width: 100%;
     }
-
 }
 
 .project-nav-download-bubble:after {
@@ -126,6 +119,6 @@
     display: block;
     width: 0;
     z-index: 1;
-    left: -7px;
-    top: 13px;
+    left: -.4375em;
+    top: .8125em;
 }

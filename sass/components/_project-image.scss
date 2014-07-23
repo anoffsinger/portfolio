@@ -1,6 +1,17 @@
 // Images that appear across all project pages
 
-.project-image-large {
+.project-image {
+    display: block;
+    vertical-align: middle;
+    text-shadow: none;
+    color: transparent;
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin: 0 auto $small auto;
+}
+
+.project-image-demo {
     width: 76.7361111%;
     display: block;
     margin: 0 auto $small auto;
@@ -15,6 +26,8 @@
 }
 
 .project-image-small-container {
+    @extend %clearfix;
+
     width: 76.8428373%;
     margin: 0 auto;
     margin-bottom: $small;
@@ -24,20 +37,364 @@
     }
 }
 
-.project-image-small-left {
-    width: 49%;
-    margin-right: 1.3%;
+.project-image-cue-comps {
+    width: 76.7361111%;
+    background-image: url("../images/cue-mobile-comps.png");
+
+    @media (max-width: 50em) {
+        width: 100%;
+    }
+
+    @media (max-width: 35.5em) {
+        background-image: url("../images/cue-mobile-comps-small.png");
+        width: 100%;
+    }
+
+    .project-image-cue-comps-inner {
+        padding-top: 117.2850679%; /* height/width of image */
+        display: block;
+        height: 0;
+    }
+}
+
+.project-image-crafty-full {
+    width: 76.7361111%;
+    background-image: url("../images/crafty-full.png");
+
+    @media (max-width: 50em) {
+        width: 100%;
+    }
+
+    @media (max-width: 35.5em) {
+        background-image: url("../images/crafty-full-small.png");
+        width: 100%;
+    }
+
+    .project-image-crafty-full-inner {
+        padding-top: 117.2850679%;
+        display: block;
+        height: 0;
+    }
+}
+
+.project-image-cue-splashpage {
+    width: 76.7361111%;
+    background-image: url("../images/cue-splashpage-full.png");
+
+    @media (max-width: 50em) {
+        width: 100%;
+    }
+
+    @media (max-width: 35.5em) {
+        background-image: url("../images/cue-splashpage-full-small.png");
+        width: 100%;
+    }
+
+    .project-image-cue-splashpage-inner {
+        padding-top: 192.2171946%;
+        display: block;
+        height: 0;
+    }
+}
+
+.project-image-cue-colors {
+    width: 49.2%;
+    background-image: url("../images/cue-colors.png");
+    float: left;
+    margin-bottom: 0;
 
     @media (max-width: 50em) {
         width: 100%;
         margin-bottom: $small;
+        float: none;
+    }
+
+    .project-image-cue-colors-inner {
+        padding-top: 117.4793008%;
+        display: block;
+        height: 0;
     }
 }
 
-.project-image-small-right {
-    width: 49%;
+.project-image-cue-logo {
+    width: 49.2%;
+    background-image: url("../images/cue-logo-treatment.png");
+    float: right;
+    margin-bottom: 0;
 
     @media (max-width: 50em) {
         width: 100%;
+        float: none;
+    }
+
+    .project-image-cue-logo-inner {
+        padding-top: 117.4793008%;
+        display: block;
+        height: 0;
+    }
+}
+
+.project-image-cue-logo-guide {
+    width: 76.7361111%;
+    background-image: url("../images/cue-logo-guide.png");
+
+    @media (max-width: 50em) {
+        width: 100%;
+    }
+
+    .project-image-cue-logo-guide-inner {
+        padding-top: 58.616010855%;
+        display: block;
+        height: 0;
+    }
+}
+
+.project-image-crafty-logo {
+    width: 49.2%;
+    background-image: url("../images/crafty-logo.png");
+    float: left;
+    margin-bottom: 0;
+
+    @media (max-width: 50em) {
+        width: 100%;
+        margin-bottom: $small;
+        float: none;
+    }
+
+    .project-image-crafty-logo-inner {
+        padding-top: 117.4793008%;
+        display: block;
+        height: 0;
+    }
+}
+
+.project-image-crafty-generate {
+    width: 49.2%;
+    background-image: url("../images/crafty-generate.gif");
+    float: right;
+    margin-bottom: 0;
+
+    @media (max-width: 50em) {
+        width: 100%;
+        float: none;
+    }
+
+    .project-image-crafty-generate-inner {
+        padding-top: 117.4793008%;
+        display: block;
+        height: 0;
+    }
+}
+
+.project-image-cue-logo-animation {
+    width: 49.2%;
+    background-image: url("../images/cue-logo-animation.gif");
+    float: left;
+    margin-bottom: 0;
+
+    @media (max-width: 50em) {
+        width: 100%;
+        margin-bottom: $small;
+        float: none;
+    }
+
+    .project-image-cue-logo-animation-inner {
+        padding-top: 117.4793008%;
+        display: block;
+        height: 0;
+    }
+}
+
+.project-image-cue-splashpage-mobile {
+    width: 49.2%;
+    background-image: url("../images/cue-splashpage-mobile.gif");
+    float: right;
+    margin-bottom: 0;
+
+    @media (max-width: 50em) {
+        width: 100%;
+        float: none;
+    }
+
+    .project-image-cue-splashpage-mobile-inner {
+        padding-top: 117.4793008%;
+        display: block;
+        height: 0;
+    }
+}
+
+.project-image-dr-spread-1 {
+    width: 76.7361111%;
+    background-image: url("../images/cover.jpg");
+
+    @media (max-width: 50em) {
+        width: 100%;
+    }
+
+    .project-image-dr-spread-1-inner {
+        padding-top: 58.616010855%;
+        display: block;
+        height: 0;
+    }
+}
+
+.project-image-dr-spread-2 {
+    width: 76.7361111%;
+    background-image: url("../images/dr-spread-3.jpg");
+
+    @media (max-width: 50em) {
+        width: 100%;
+    }
+
+    .project-image-dr-spread-2-inner {
+        padding-top: 58.616010855%;
+        display: block;
+        height: 0;
+    }
+}
+
+.project-image-dr-spread-3 {
+    width: 76.7361111%;
+    background-image: url("../images/dr-spread-1.jpg");
+
+    @media (max-width: 50em) {
+        width: 100%;
+    }
+
+    .project-image-dr-spread-3-inner {
+        padding-top: 58.616010855%;
+        display: block;
+        height: 0;
+    }
+}
+
+.project-image-dr-spread-4 {
+    width: 76.7361111%;
+    background-image: url("../images/dr-spread-2.png");
+
+    @media (max-width: 50em) {
+        width: 100%;
+    }
+
+    .project-image-dr-spread-4-inner {
+        padding-top: 58.616010855%;
+        display: block;
+        height: 0;
+    }
+}
+
+.project-image-skoop-homepage {
+    width: 76.7361111%;
+    background-image: url("../images/skoop-homepage.png");
+
+    @media (max-width: 50em) {
+        width: 100%;
+    }
+
+    .project-image-skoop-homepage-inner {
+        padding-top: 58.616010855%;
+        display: block;
+        height: 0;
+    }
+}
+
+
+.project-image-skoop-story {
+    width: 76.7361111%;
+    background-image: url("../images/skoop-story.png");
+
+    @media (max-width: 50em) {
+        width: 100%;
+    }
+
+    @media (max-width: 35.5em) {
+        background-image: url("../images/skoop-story-small.png");
+        width: 100%;
+    }
+
+    .project-image-skoop-story-inner {
+        padding-top: 192.2171946%;
+        display: block;
+        height: 0;
+    }
+}
+
+.project-image-skoop-flipbook {
+    width: 76.7361111%;
+    background-image: url("../images/flipbook-1.gif");
+
+    @media (max-width: 50em) {
+        width: 100%;
+    }
+
+    .project-image-skoop-flipbook-inner {
+        padding-top: 58.616010855%;
+        display: block;
+        height: 0;
+    }
+}
+
+.project-image-skoop-icons {
+    width: 76.7361111%;
+    background-image: url("../images/skoop-icons.png");
+
+    @media (max-width: 50em) {
+        width: 100%;
+    }
+
+    .project-image-skoop-icons-inner {
+        padding-top: 58.616010855%;
+        display: block;
+        height: 0;
+    }
+}
+
+.project-image-spg-map {
+    width: 76.7361111%;
+    background-image: url("../images/spg-map.png");
+
+    @media (max-width: 50em) {
+        width: 100%;
+    }
+
+    .project-image-spg-map-inner {
+        padding-top: 58.616010855%;
+        display: block;
+        height: 0;
+    }
+}
+
+.project-image-spg-comps {
+    width: 76.7361111%;
+    background-image: url("../images/spg-all-comps.png");
+
+    @media (max-width: 50em) {
+        width: 100%;
+    }
+
+    @media (max-width: 35.5em) {
+        background-image: url("../images/spg-all-comps-small.png");
+        width: 100%;
+    }
+
+    .project-image-spg-comps-inner {
+        padding-top: 117.2850679%;
+        display: block;
+        height: 0;
+    }
+}
+
+.project-image-spg-animation {
+    width: 76.7361111%;
+    background-image: url("../images/spg-animation.png");
+
+    @media (max-width: 50em) {
+        width: 100%;
+    }
+
+    .project-image-spg-animation-inner {
+        padding-top: 58.616010855%;
+        display: block;
+        height: 0;
     }
 }
