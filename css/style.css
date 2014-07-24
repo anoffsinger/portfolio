@@ -303,19 +303,14 @@ h3 {
   background-color: #586b6d;
   width: 100%;
   height: 100%;
-  transition: opacity .3s ease; }
+  transition: opacity .3s ease;
+  display: table; }
 
-/* line 136, ../sass/components/_project-list.scss */
-.project-list-item-description:before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-  margin-right: -0.25em; }
-
-/* line 144, ../sass/components/_project-list.scss */
+/* line 137, ../sass/components/_project-list.scss */
 .project-list-item-description-text {
-  display: inline-block;
+  vertical-align: middle;
+  display: table-cell;
+  text-align: center;
   vertical-align: middle; }
 
 /* line 3, ../sass/components/_logo.scss */
