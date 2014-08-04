@@ -1,14 +1,14 @@
 {
   "name": "adam-noffsinger",
   "version": "0.0.0",
-  "description": "",
+  "description": "Adam's portfolio site.",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:anoffsinger/noff.git"
+    "url": "git@github.com:anoffsinger/portfolio.git"
   },
   "author": "Adam Noffsinger",
   "license": "ISC",

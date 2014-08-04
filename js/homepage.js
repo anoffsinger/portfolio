@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    $(".project-list-all").hide();
+
 // Logo Flip
     var sOffset = $(".flip-container").offset().top;  //find top of logo
     var shareheight = $(".flip-container").height(); //find height of logo
@@ -14,18 +16,19 @@ $(document).ready(function() {
     });
 
 // See More
-    $(".project-list-all").hide();
+    var $allProjects = $(".project-list-all");
+    var $allButton = $(".button-see-all");
 
-    $(".button-see-all").click(function() {
-        $(".project-list-all").slideToggle();
+    $allButton.click(function() {
+        $allProjects.slideToggle();
         $(this).text(function(i, text){
             return text === "See More" ? "See Less" : "See More";
         })
     });
 
     if (window.location.hash === "#work") {
-        $(".project-list-all").slideToggle();
-        $(".button-see-all").text(function(i, text){
+        $allProjects.slideToggle();
+        $allButton.text(function(i, text){
             return text === "See More" ? "See Less" : "See More";
         })
     }
