@@ -21,10 +21,7 @@
 #work {
     padding-top: $medium;
     background-color: $silver;
-
-    @media (max-width: 50em) {
-        height: auto;
-    }
+    height: auto;
 }
 
 #contact {

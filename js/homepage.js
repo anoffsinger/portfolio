@@ -1,9 +1,6 @@
-// Site Fade-In
 $(document).ready(function() {
-//     $(document.body).hide().fadeIn('4000');
 
-
-// Homepage Logo Flip
+// Logo Flip
     var sOffset = $(".flip-container").offset().top;  //find top of logo
     var shareheight = $(".flip-container").height(); //find height of logo
     var $document = $(document);
@@ -14,20 +11,22 @@ $(document).ready(function() {
         var direction = scrollYpos > 0? "180deg" : "0deg"; //questionmark is shorthand if
 
         $flipper.css("-webkit-transform", "rotateY("+direction+")");
-
-
-        var $nav = $(".project-nav");
-        var $textLogo = $(".text-logo");
-        var $footer = $("#contact");
-
-        var posFooter = $footer.offset().top;  //find top of footer
-        var posNav = $nav.offset().top + 350;  //find top of nav, and compensate for body of nav (260)
-
-        if (posNav > posFooter){
-            $(".project-nav, .text-logo").stop(true, true).animate({opacity: 0}, 100);
-        } else {
-            $(".project-nav, .text-logo").stop(true, true).animate({opacity: 1}, 100);
-        }
     });
 
+// See More
+    $(".project-list-all").hide();
+
+    $(".button-see-all").click(function() {
+        $(".project-list-all").slideToggle();
+        $(this).text(function(i, text){
+            return text === "See More" ? "See Less" : "See More";
+        })
+    });
+
+    if (window.location.hash === "#work") {
+        $(".project-list-all").slideToggle();
+        $(".button-see-all").text(function(i, text){
+            return text === "See More" ? "See Less" : "See More";
+        })
+    }
 });

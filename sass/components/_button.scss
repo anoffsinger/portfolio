@@ -34,7 +34,10 @@
 }
 
 .button-see-all {
-    margin: 0 auto;
+    margin: $large auto 0 auto;
+    border: none;
+    outline: none;
+    cursor: pointer;
 
     @media (max-width: 50em) {
         margin-bottom: $large;

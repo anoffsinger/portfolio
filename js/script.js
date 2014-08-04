@@ -1,10 +1,4 @@
-// Site Fade-In
-// $(document).ready(function() {
-//     $(document.body).hide().fadeIn('4000');
-// });
-
 // Sidebar Fade
-// To solve this problem, I had to have all variables in the local scope and had to put within the scroll function, so that constant scrolling keep running the function
 $(document).ready(function() {
     $(".project-nav-download-bubble").hide().delay("1000").fadeToggle("1000", function() {
         $(this).delay("3000").fadeToggle("1000");

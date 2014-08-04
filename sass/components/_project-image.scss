@@ -41,6 +41,10 @@
     width: 76.7361111%;
     background-image: url("../images/cue-mobile-comps.png");
 
+    @media (max-width: 64.0625em) {
+        background-image: url("../images/cue-mobile-comps-medium.png");
+    }
+
     @media (max-width: 50em) {
         width: 100%;
     }
@@ -61,6 +65,10 @@
     width: 76.7361111%;
     background-image: url("../images/crafty-full.png");
 
+    @media (max-width: 64.0625em) {
+        background-image: url("../images/crafty-full-medium.png");
+    }
+
     @media (max-width: 50em) {
         width: 100%;
     }
@@ -80,6 +88,10 @@
 .project-image-cue-splashpage {
     width: 76.7361111%;
     background-image: url("../images/cue-splashpage-full.png");
+
+    @media (max-width: 64.0625em) {
+        background-image: url("../images/cue-splashpage-full-medium.png");
+    }
 
     @media (max-width: 50em) {
         width: 100%;
