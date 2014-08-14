@@ -1,25 +1,12 @@
-.cue-demo {
-     margin: 0 auto $small auto;
-     position: relative;
-
-     @media (max-width: 21.25em) {
-         display: none;
-     }
-}
-
 .cue-demo-video {
-    position: absolute;
-    right: 0;
-    left: 0;
-    margin-left: auto;
-    margin-right: auto;
-    top: 50%;
-    margin-top: -10.546875em;
-    width: 13.3520731%;
+    display: block;
+    width: 76.7361111%;
+    margin: 0 auto $small auto;
+
     -webkit-filter: brightness(105%) contrast(100%) saturate(97%) hue-rotate(8deg);
     filter: brightness(105%) contrast(100%) saturate(97%) hue-rotate(8deg);
 
     @media (max-width: 50em) {
-        width: 17%;
+        width: 100%;
     }
 }

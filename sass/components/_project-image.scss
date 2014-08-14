@@ -11,20 +11,6 @@
     margin: 0 auto $small auto;
 }
 
-.project-image-demo {
-    width: 76.7361111%;
-    display: block;
-    margin: 0 auto $small auto;
-
-    &:last-of-type {
-        margin-bottom: $small;
-    }
-
-    @media (max-width: 50em) {
-        width: 100%;
-    }
-}
-
 .project-image-small-container {
     @extend %clearfix;
 
